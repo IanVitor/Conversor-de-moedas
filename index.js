@@ -10,7 +10,7 @@ const lowValue = document.querySelector('.low-value span')
 const getValueData = async(texto) => {
   const URL = texto
 
-  apiValueURL = `http://economia.awesomeapi.com.br/json/last/${URL}`
+  apiValueURL = `https://economia.awesomeapi.com.br/json/last/${URL}`
 
   const res = await fetch(apiValueURL);
   const data = await res.json();
