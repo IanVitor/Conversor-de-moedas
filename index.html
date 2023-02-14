@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Conversor</title>
+  </head>
+  <body>
+    <main>
+      <div class="btn-container">
+        <button
+          class="btn"
+          id="dlButton"
+          value="USD-BRL"
+          onclick="showValueData(value)"
+        >
+          <span class="fi fi-us"></span> Dólar
+        </button>
+
+        <button
+          class="btn"
+          id="euButton"
+          value="EUR-BRL"
+          onclick="showValueData(value)"
+        >
+          <span class="fi fi-eu"></span> Euro
+        </button>
+
+        <button
+          class="btn"
+          id="ieButton"
+          value="JPY-BRL"
+          onclick="showValueData(value)"
+        >
+          <span class="fi fi-jp"></span> Iene
+        </button>
+
+        <button
+          class="btn"
+          id="liButton"
+          value="GBP-BRL"
+          onclick="showValueData(value)"
+        >
+          <span class="fi fi-gb"></span> Libra
+        </button>
+      </div>
+
+      <section class="wrapper-container">
+        <div class="input-container">
+          <input
+            type="number"
+            id="input"
+            class="value-container input"
+            placeholder="Valor em reais*"
+          />
+        </div>
+
+        <div class="result-container">
+          <p class="value-container" id="tela"><span></span></p>
+        </div>
+      </section>
+
+      <div id="details-container" class="hide">
+        <div class="coin-title">
+          <h1></h1>
+        </div>
+        <div id="actual-value" class="variation-container valor-atual">
+          <p>Valor atual: R$ <span></span></p>
+        </div>
+        <div id="variation-value" class="variation-container">
+          <p>Variação: <span></span> <i class="fa-solid fa-percent"></i></p>
+        </div>
+        <div class="coin-max-min">
+          <p class="high-value">
+            <i class="fa-solid fa-arrow-trend-up"></i> R$ <span></span>
+          </p>
+          <p class="low-value">
+            <i class="fa-solid fa-arrow-trend-down"></i> R$ <span></span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
