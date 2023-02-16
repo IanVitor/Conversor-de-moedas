@@ -1,7 +1,5 @@
 # Conversor de moedas
  
- <H1>Câmbio de moedas</H1>
- 
  <img src='./img/Conversor de moedas.png'>
  
 <p>
