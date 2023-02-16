@@ -2,7 +2,7 @@
  
  <H1>Previsão de clima</H1>
  
- <img src='./src/imagem_2023-02-04_024347715.png'>
+ <img src='./src/conversordemoedas.png'>
  
 <p>
  Projeto inspirado no vídeo do canal <a target="_blank" href="https://www.youtube.com/@MatheusBattisti">Matheus Battisti</a>.
